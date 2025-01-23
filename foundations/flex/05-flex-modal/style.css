@@ -20,6 +20,10 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+
+  padding: 16px;
+  display: flex;
+  gap: 16px;
 }
 
 .icon {
@@ -33,6 +37,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -54,6 +60,8 @@ button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+
+  font-weight: bold;
 }
 
 button.continue {
@@ -66,4 +74,31 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+
+/* 
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+} */
+ /*Esto resulta innecesario, ya que el flow model los acomoda como queremos.
+   En cambio, añadir algunos margin-bottoms*/
+
+.text {
+  margin-bottom: 16px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  margin-bottom: 12px;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 24px;
 }
